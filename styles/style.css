@@ -315,7 +315,7 @@ header::after{
     border-left: 2px var(--clr-cyan) solid;
     border-radius: 10px;
     flex: 1;
-    width: 320px;
+    width: 15vw;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     transition: 0.3s;
     background-color: white;
