@@ -1,5 +1,5 @@
 document.addEventListener("scroll", () => {
-    const aboutSection  = document.getElementById("aboutgrid");
+    const aboutSection  = document.getElementById("about-wtyczka");
     const h2            = aboutSection.querySelector("h2");
     const paragraphs    = aboutSection.querySelectorAll("p");
     const position      = aboutSection.getBoundingClientRect().top;
