@@ -22,7 +22,6 @@ const strzLewo      = document.querySelector('#przewinLewo');
 const strzPrawo     = document.querySelector('#przewinPrawo');
 const obrazki       = document.querySelector('#obrazki');       // "Pudełko z czterema obrazkami"
 const trzymak       = document.querySelector('#trzymak');       // Trzyma wszystkie obrazki
-// const p             = document.querySelector('p');
 
 const height = obrazki.getBoundingClientRect().height + 4;      // + 4 bo jest gap 4px od flexa w #galeria
 

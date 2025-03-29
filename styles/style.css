@@ -51,9 +51,9 @@ h2 {
     translate: 0 -50%;
 }
 .wrapper {    /* Wrapper dla elementów */
-    --max-width: 1340px;
+    --max-width: 1400px;
     --padding-inline: 40px;
-    max-width: calc(var(--max-width) - var(--padding-inline) * 2);
+    max-width: 1300px;
     padding-inline: var(--padding-inline);
     margin-inline: auto;
 }
@@ -125,8 +125,8 @@ nav ul {
         color: black;
         position: relative;
     }
-    #red {
-        color: var(--clr-dark-purple);
+    li:last-child a {
+        color: var(--clr-purple);
     }
     a::before {
         content: "";
@@ -243,7 +243,7 @@ nav ul {
         margin-bottom: 10px;
     }
     p {
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
         line-height: 1.4rem;
         font-size: 1.25rem;
         animation: wjazdLewo2 1.8s cubic-bezier(0.23, 1, 0.320, 1);
@@ -291,6 +291,7 @@ nav ul {
 
 #about-wtyczka {
     margin-block: 100px;
+    scroll-margin-top: 30dvh;
     h2 {
         color: var(--clr-purple);
         margin-bottom: 20px;
@@ -320,6 +321,7 @@ nav ul {
     background-size: cover;
     background-position: 50% 65%;
     background-repeat: no-repeat;
+    scroll-margin-top: 30dvh;
     h2 {
         position: absolute; 
         top: 50%; left: 50%; 
@@ -373,6 +375,7 @@ nav ul {
 
 #galeria {
     margin-block: 100px;
+    margin-top: 20px;
 
     h2 {
         color: var(--clr-purple);
@@ -380,6 +383,7 @@ nav ul {
     }
     p {
         font-size: 1.25rem;
+        line-height: 1.7rem;
     }
 }
 #galeria-content {
@@ -463,13 +467,25 @@ nav ul {
     z-index: -1;
 }
 #ftr-upper {
-    border-bottom: var(--clr-purple) 1px solid;
+    /* border-bottom: var(--clr-purple) 1px solid; */
+    position: relative;
     padding-block: 40px;
     color: white;
 
     h3 {
         text-align: center;
         margin-bottom: 20px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        translate: -50% 0;
+        width: 100%;
+        height: 2px;
+        background-image: linear-gradient(90deg, transparent, var(--clr-purple), transparent);
+        z-index: -1;
     }
 }
 #ftr-upper i {
