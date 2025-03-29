@@ -1,18 +1,4 @@
-@keyframes animacja1{
-    0%{
-        opacity: 0;
-        translate: 0 -100%;
-    }
-    50%{
-        opacity: 1;
-        translate: 0 15%;
-    }
-    100%{
-        opacity: 1;
-        translate: 0 0;
-    }
-}
-@keyframes animacja2{
+@keyframes wjazdLewo1{
     0%{
         opacity: 0;
         translate: 100% 0;
@@ -26,7 +12,21 @@
         translate: 0 0;
     }
 }
-@keyframes animacja3{
+/* @keyframes wjazdJakiś{
+    0%{
+        opacity: 0;
+        translate: 0 -100%;
+    }
+    50%{
+        opacity: 1;
+        translate: 0 15%;
+    }
+    100%{
+        opacity: 1;
+        translate: 0 0;
+    }
+} */
+@keyframes wjazdGóra{
     0%{
         opacity: 0;
         translate: 0 100%;
@@ -40,7 +40,7 @@
         translate: 0 0;
     }
 }
-@keyframes animacja4{
+@keyframes wjazdDół{
     0%{
         opacity: 0;
         translate: 0 -500%;
@@ -50,17 +50,15 @@
         translate: 0 0;
     }
 }
-@keyframes logoanimacja{
+@keyframes fadeIn{
     0%{
         opacity: 0;
-        translate: 0 0;
     }
     100%{
         opacity: 1;
-        translate: 0 0;
     }
 }
-@keyframes section2{
+@keyframes wjazdLewo2{
     0%{
         opacity: 0;
         translate: 100% 0;
@@ -74,7 +72,21 @@
         translate: 0 0;
     }
 }
-@keyframes animacja7 {
+@keyframes wjazdPrawo1{
+    0%{
+        opacity: 0;
+        translate: -100% 0;
+    }
+    50%{
+        opacity: 1;
+        translate: 5% 0%;
+    }
+    100%{
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+/* @keyframes animacja7 {
     0% {
       opacity: 0;
       translate: -150% 0;
@@ -91,22 +103,8 @@
         opacity: 1;
         translate: 0 0;
     }
-}
-@keyframes animacja8{
-    0%{
-        border-color: var(--clr-cyan);
-    }
-    40%{
-        border-color: var(--clr-dark-purple);
-    }
-    90%{
-        border-color: var(--clr-purple);
-    }
-    100%{
-        border-color: var(--clr-cyan);
-    }
-}
-@keyframes animacja9{
+} */
+/* @keyframes animacja9{
     0%{
         background-color: var(--clr-cyan);
     }
@@ -119,40 +117,12 @@
     100%{
         background-color: var(--clr-cyan);
     }
-}
-@keyframes section2guzik {
-    0%{
-        opacity: 0;
-        translate: 100% 0;
-    }
-    100%{
-        opacity: 1;
-        translate: 0 0;
-    }
-}
-@keyframes section2p{
-    0%{
-        translate: 150% 0;
-    }
-    100%{
-        translate: 0 0;
-    }
-}
+} */
 @keyframes kartki{
     0%{
         translate: 0 50%
     }
     100%{
         translate: 0 -20%;
-    }
-}
-@keyframes test{
-    0%
-    {
-        transform: rotate(0deg);
-    }
-    100%
-    {
-        transform: rotate(360deg);
     }
 }

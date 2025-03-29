@@ -67,7 +67,7 @@ h2 {
     }
 }
 .active {    /* Aktywator animacji przy scrollowaniu */
-    animation: animacja7 1s both;
+    animation: wjazdPrawo1 1s both;
 }
 
 /* Styl (W kolejności elementów struktury HTML) */
@@ -97,7 +97,7 @@ nav {
 #logo a {
     width: 120px;
     padding: 5px;
-    animation: logoanimacja 1s;
+    animation: fadeIn 1s;
 }
 nav ul {
     display: flex;
@@ -107,19 +107,18 @@ nav ul {
     li {
         padding-inline: 25px;
         position: relative;
-        animation: animacja4 1.5s both;
+        animation: wjazdDół 1.5s both;
     }
     li:not(:last-child)::after {
         content: "";
         position: absolute;
-        background-color: var(--clr-cyan); 
+        background-color: var(--clr-purple); 
         width: 2px;
         height: 50%;
         left: 100%;
         top: 50%;
         translate: 0 -50%;
         border-radius: 75px;
-        animation: animacja9 6s infinite;
     }
     a {
         font-size: 1.15em;
@@ -184,12 +183,12 @@ nav ul {
         font-size: 3.5rem;
         position: relative;
         margin-bottom: 20px;
-        animation: animacja2 2s;
+        animation: wjazdLewo1 2s;
     }
     p {
         font-size: 2rem;
         margin-bottom: 30px;
-        animation: animacja1 1s;
+        animation: wjazdLewo1 1s;
     }
 }
 #hdr-btns {
@@ -197,7 +196,7 @@ nav ul {
     gap: 20px;
 }
 #hdr-btns > .btn {
-    animation: animacja3 2s both;
+    animation: wjazdGóra 2s both;
     opacity: 0;
 
     &:hover {
@@ -237,7 +236,7 @@ nav ul {
     color: white;
     border-radius: 15px;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
-    animation: section2 1.5s cubic-bezier(0.23, 1, 0.320, 1);
+    animation: wjazdLewo2 1.5s cubic-bezier(0.23, 1, 0.320, 1);
     overflow: clip;
     h2 {
         position: relative;
@@ -247,10 +246,10 @@ nav ul {
         margin-bottom: 30px;
         line-height: 1.4rem;
         font-size: 1.25rem;
-        animation: section2p 1.5s cubic-bezier(0.23, 1, 0.320, 1);
+        animation: wjazdLewo2 1.8s cubic-bezier(0.23, 1, 0.320, 1);
     }
     .btn {
-        animation: section2guzik 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+        animation: wjazdLewo2 1.8s cubic-bezier(0.19, 1, 0.22, 1);
         animation-delay: 1.5s both;
     }
 }
