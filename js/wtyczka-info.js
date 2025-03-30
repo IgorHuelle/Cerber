@@ -1,5 +1,5 @@
-const items = document.querySelectorAll('#slajdy > div');
-const btns  = document.querySelectorAll('.bottom-button');
+const items = document.querySelectorAll('.info-item');
+const btns  = document.querySelectorAll('.progress-bar');
 
 let timeout, x = 0;
 
@@ -10,7 +10,7 @@ function showItem(i) {
 function addLoadingBar(elm, i) {
     if(elm.innerHTML != '') return;
     
-    elm.innerHTML = '<div id="pasek"></div>';
+    elm.innerHTML = '<div id="progress"></div>';
     x = 0;
 
     clearTimeout(timeout);
@@ -20,9 +20,9 @@ function addLoadingBar(elm, i) {
 }
 
 function timeoutLoop(elm, i) {
-    const pasek = document.querySelector('#pasek');
+    const progress = document.querySelector('#progress');
     timeout = setTimeout(() => {
-        pasek.style.width = `${++x}%`;
+        progress.style.width = `${++x}%`;
 
         if(x < 100) {
             timeoutLoop(elm, i);
@@ -34,7 +34,7 @@ function timeoutLoop(elm, i) {
             addLoadingBar(btns[newIndex], newIndex);
             showItem(newIndex);
         }
-    }, 50);
+    }, 100);
 };
 
 btns.forEach((btn, i) => {
