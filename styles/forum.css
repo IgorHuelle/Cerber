@@ -153,8 +153,10 @@ header{
     p{
         text-align: center;
         margin-inline: auto;
-        width: 500px;
+        width: 700px;
         margin-bottom: 20px;
+        font-size: 1.25em;
+        line-height: 1.7rem;
     }
     form{
         display: flex;
