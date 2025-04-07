@@ -99,6 +99,7 @@ nav {
     padding: 5px;
     animation: fadeIn 1s;
 }
+
 nav ul {
     display: flex;
     justify-items: center;
@@ -134,7 +135,7 @@ nav ul {
         top: 100%;
         left: 50%;
         translate: -50% 0;
-        background-image: linear-gradient(90deg, var(--clr-purple), var(--clr-dark-purple));
+        background-color: var(--clr-purple);
         width: 0%;
         height: 1px;
         transition: width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -143,6 +144,13 @@ nav ul {
     a:hover::before {
         width: 100%;
     }
+}
+#fat{
+    font-weight: bold;
+    transition: 0.3s;
+}
+#fat:hover{
+    filter: drop-shadow(0 5px 5px var(--clr-purple))
 }
 #hdr {
     height: 90vh;
@@ -200,7 +208,7 @@ nav ul {
     opacity: 0;
 
     &:hover {
-        box-shadow: 0px 10px 20px var(--clr-purple);
+        filter: drop-shadow(0px 10px 20px var(--clr-purple));
     }
     &:nth-child(2) {
         animation-delay: .25s;
@@ -527,3 +535,14 @@ nav ul {
     justify-content: center;
     gap: 16px;
 }
+
+
+#cyber-clip {
+    -webkit-clip-path: polygon(calc(100% - .75rem) 0%, 100% .75rem, 100% 100%, .75rem 100%, 0% calc(100% - .75rem), 0 0);
+    clip-path: polygon(calc(100% - .75rem) 0%, 100% .75rem, 100% 100%, .75rem 100%, 0% calc(100% - .75rem), 0 0);
+    transition: clip-path 0.4s ease-in-out, -webkit-clip-path 0.4s ease-in-out;
+}
+#cyber-clip:hover {
+    -webkit-clip-path: polygon(.75rem 0%, 100% 0%, 100% calc(100% - .75rem), calc(100% - .75rem) 100%, 0% 100%, 0% .75rem);
+    clip-path: polygon(.75rem 0%, 100% 0%, 100% calc(100% - .75rem), calc(100% - .75rem) 100%, 0% 100%, 0% .75rem);
+  }
