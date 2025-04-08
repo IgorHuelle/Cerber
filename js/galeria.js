@@ -1,5 +1,5 @@
 const galeria = document.querySelector('#galeria-content > #obrazki > #trzymak');
-const countObr     = 9;
+const countObr     = 12;
 const slajdPerObr  = 4;
 const countSlajdy  = Math.ceil(countObr/slajdPerObr);
 
