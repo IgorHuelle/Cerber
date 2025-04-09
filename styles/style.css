@@ -545,4 +545,4 @@ nav ul {
 #cyber-clip:hover {
     -webkit-clip-path: polygon(.75rem 0%, 100% 0%, 100% calc(100% - .75rem), calc(100% - .75rem) 100%, 0% 100%, 0% .75rem);
     clip-path: polygon(.75rem 0%, 100% 0%, 100% calc(100% - .75rem), calc(100% - .75rem) 100%, 0% 100%, 0% .75rem);
-  }
+}
