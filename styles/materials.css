@@ -188,10 +188,18 @@ nav ul {
 #hdr section{
     background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(102, 51, 153, 0.4);
     margin-bottom: 40px;
     padding-block: 40px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+header section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 #hdr p, #hdr li{
     font-size: 1.3rem;
 }
