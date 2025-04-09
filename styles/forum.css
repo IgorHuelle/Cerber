@@ -150,6 +150,8 @@ nav ul {
     padding-block: 50px;
     position: relative;
     height: 90vh;
+
+    align-content: center;
 }
 #hdr::before {
     content: "";
@@ -406,10 +408,11 @@ nav ul {
 }
 #obrazki {
     position: relative;
-    width: calc(500px + var(--gap));
-    aspect-ratio: 1 / 1;
+    width: calc(600px + var(--gap));
+    height: 800px;
     overflow: clip;
     border-radius: 10px;
+    background-color: #8138d6;
 }
 #trzymak {
     display: flex;
@@ -425,6 +428,9 @@ nav ul {
     display: grid;
     grid-template: repeat(2, 250px) / repeat(2, 250px);
     gap: var(--gap);
+    width: calc(600px + var(--gap));
+    height: 800px;
+    background-color: red;
     
     > .obrazek {
         position: relative;
