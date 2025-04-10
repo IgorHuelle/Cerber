@@ -7,6 +7,13 @@
     --clr-cyan: #00E5FF;
     --clr-dark-purple: #3d0b76;
     --gap: 4px;
+
+    --a: hsl(0, 0%, 0%);
+    --p: hsl(0, 0%, 0%);
+    --bgc-t: hsla(0, 0%, 100%, 0.9);
+    --box-sdw: rgba(0, 0, 0, 0.2);
+    --h3: hsl(0, 0%, 0%);
+    --ol: hsl(0, 0%, 0%);
 }
 
 *, *::before, *::after {    /* Reset stylu na wszystkie elementy */
@@ -14,6 +21,9 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+body {
+    background-color: var(--bgc);
 }
 body, input, textarea {    
     font-family: Exo2, sans-serif;
@@ -91,7 +101,7 @@ nav {
         translate: -50% -50%;
         width: 100dvw;
         height: 100%;
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: var(--bgc-t);
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
         z-index: -1;
     }
@@ -106,6 +116,7 @@ nav ul {
     justify-items: center;
     align-items: center;
     margin-inline: auto;
+
     li {
         padding-inline: 25px;
         position: relative;
@@ -124,7 +135,7 @@ nav ul {
     }
     a {
         font-size: 1.15em;
-        color: black;
+        color: var(--a);
         position: relative;
     }
     li:last-child a {
@@ -186,9 +197,9 @@ nav ul {
 }
 
 #hdr section{
-    background: rgba(255, 255, 255, 0.8);
+    background: var(--bgc-t);
     border-radius: 10px;
-    box-shadow: 0 0 5px rgba(102, 51, 153, 0.4);
+    box-shadow: 0 0 5px var(--box-sdw);
     margin-bottom: 40px;
     padding-block: 40px;
     opacity: 0;
@@ -203,16 +214,21 @@ header section.visible {
 #hdr p, #hdr li{
     font-size: 1.3rem;
 }
+#hdr p {
+    color: var(--p);
+}
 #hdr p:not(:last-child){
     margin-bottom: 40px;
 }
 #hdr ol{
     margin-left: 40px;
     margin-bottom: 40px;
+    color: var(--ol);
 }
 #hdr h3{
     font-size: 1.8rem;
     margin-bottom: 10px;
+    color: var(--h3);
 }
 #hdr a{
     display: inline;
@@ -297,4 +313,14 @@ header section.visible {
     display: flex;
     justify-content: center;
     gap: 16px;
+}
+
+.dark-mode {
+    --bgc-t: hsla(0, 0%, 5%, 0.9);
+    --bgc: hsl(0, 0%, 10%);
+    --a: hsl(0, 0%, 100%);
+    --p: hsl(0, 0%, 80%);
+    --box-sdw: rgba(250, 250, 250, 0.3);
+    --h3: hsl(0, 0%, 100%);
+    --ol: hsl(0, 0%, 80%);
 }
